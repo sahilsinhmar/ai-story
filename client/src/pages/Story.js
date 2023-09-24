@@ -28,7 +28,7 @@ const Story = () => {
     setIsLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:3001/api/v1/ai/generate-story",
+        "https://aistory-o64w.onrender.com/api/v1/ai/generate-story",
         {
           prompt,
         }
@@ -52,7 +52,7 @@ const Story = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `http://localhost:3001/api/v1/story/${userId}/story`,
+        `https://aistory-o64w.onrender.com/api/v1/story/${userId}/story`,
         { prompt, story, name }
       );
 

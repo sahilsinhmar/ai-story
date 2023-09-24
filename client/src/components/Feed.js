@@ -15,7 +15,7 @@ const Feed = () => {
     const handleGetPosts = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3001/api/v1/story/stories"
+          "https://aistory-o64w.onrender.com/api/v1/story/stories"
         );
         setAllPosts(res?.data);
       } catch (error) {
