@@ -9,10 +9,10 @@ const Vote = ({ postId }) => {
   const handleVote = async () => {
     try {
       const res = await axios.patch(
-        `http://localhost:3001/api/v1/story/${postId}/vote`,
+        `https://aistory-o64w.onrender.com/api/v1/story/${postId}/vote`,
         { userId }
       );
-      console.log(res?.data);
+
       window.location.reload();
     } catch (error) {
       console.log(error.message);
